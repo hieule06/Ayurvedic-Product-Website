@@ -1,0 +1,17 @@
+.item-nav {
+  padding: 0 26px;
+  position: relative;
+  z-index: 2;
+}
+
+.item-nav::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 12px;
+  border-radius: 6px;
+  background-color: #ffa27c;
+  width: 100%;
+  z-index: 1;
+}
