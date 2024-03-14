@@ -1,12 +1,9 @@
 import PropTypes from "prop-types";
+import "./BlockReview.scss";
 
 const BlockReview = ({ bgColor, name, jobOption, content }) => {
   return (
-    <div
-      className={`bg-[${
-        bgColor ? bgColor : "503760"
-      }] rounded-xl py-[52px] px-10	`}
-    >
+    <div className={`bg-primary bg-[${bgColor}] rounded-xl py-[52px] px-10	`}>
       <h4 className="text-2xl font-bold text-white">{name}</h4>
       <p className="text-[#7BA59D] text-base mt-2 mb-[38px]">{jobOption}</p>
       <p className="text-lg font-medium text-white">{content}</p>
@@ -45,7 +42,7 @@ BlockReview.propTypes = {
   bgColor: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
-  jobOption: PropTypes.string.isRequired,
+  jobOption: PropTypes.string.isRequired
 };
 
 export default BlockReview;
